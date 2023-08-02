@@ -14,7 +14,7 @@
   // Find the index of the first value when added to it's index = 512 (#ATX!!)
   const atxIdx = stringsToNumbs(strNums).findIndex((num, index) => num + index === 512);
 
-  console.log(`index: ${atxIdx}, value: ${nums[atxIdx]}`);
+  console.log(`index: ${atxIdx}, value: ${[512 - atxIdx]}`);
 
   const weather = [
     { id: 5743823523151872,

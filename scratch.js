@@ -6,9 +6,13 @@ const myMap = (arr, fn) => {
     return mappedArray
   }
 
+  const numbers = [1, 2, 3, 4, 5];
+
+    const doubledNumbers = myMap(numbers, (num) => num * 2)
+    console.log(doubledNumbers)
 
 
-  
+
   const myReduce = (arr, fn, initialValue) => {
 
     let accumulator
@@ -28,6 +32,10 @@ const myMap = (arr, fn) => {
     return accumulator
   }
 
+  const orders = [1, 2, 3, 4];
+
+    const totalAmount = myReduce(orders, (acc, amount) => acc + amount, 0)
+    console.log(totalAmount)
 
 
 
@@ -40,3 +48,8 @@ const myMap = (arr, fn) => {
     }
     return filteredArray
   }
+
+  const randomNumbers = [1, 2, 3, 4, 5];
+
+  const evenNumbers = myFilter(randomNumbers, (num) => num % 2 === 0);
+  console.log(evenNumbers)
